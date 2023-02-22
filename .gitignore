@@ -1,0 +1,9 @@
+# Project files
+/vendor
+
+# Common ignored files
+.DS_Store
+Thumbs.db
+.vagrant
+.idea/*
+.vscode
