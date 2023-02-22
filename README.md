@@ -1,6 +1,6 @@
 # CLUB1 French Typography
 
-![License](https://img.shields.io/badge/license-AGPL-3.0-or-later-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/club-1/flarum-ext-french-typography.svg)](https://packagist.org/packages/club-1/flarum-ext-french-typography) [![Total Downloads](https://img.shields.io/packagist/dt/club-1/flarum-ext-french-typography.svg)](https://packagist.org/packages/club-1/flarum-ext-french-typography)
+![License](https://img.shields.io/badge/license-AGPL--3.0--or--later-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/club-1/flarum-ext-french-typography.svg)](https://packagist.org/packages/club-1/flarum-ext-french-typography) [![Total Downloads](https://img.shields.io/packagist/dt/club-1/flarum-ext-french-typography.svg)](https://packagist.org/packages/club-1/flarum-ext-french-typography)
 
 A [Flarum](http://flarum.org) extension. Enhanced typography for french writings, mainly around punctuation.
 
