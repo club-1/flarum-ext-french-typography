@@ -2,6 +2,10 @@
 
 ## [unreleased]
 
+### Fixed
+
+- Fix release script to use globally installed `semver` command.
+
 ## [v1.0.0] - 2023-02-22
 
 First stable release.
