@@ -2,6 +2,13 @@
 
 ## [unreleased]
 
+### Added
+
+- Convert double quotes to « guillemets », separated from the text by
+  "non-breaking spaces". ([#1])
+
+[#1]: https://github.com/club-1/flarum-ext-french-typography/issues/1
+
 ### Fixed
 
 - Fix release script to use globally installed `semver` command.
