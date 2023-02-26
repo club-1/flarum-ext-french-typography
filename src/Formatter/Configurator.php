@@ -34,10 +34,15 @@ class Configurator
 
     public function configurePunctuation(TextFormatter\Configurator $configurator): void
     {
+        $tagname = 'FRCOLON';
+        $tag = $configurator->tags->add($tagname);
+        $tag->template = '&nbsp;:';
+        $configurator->Preg->match('/ +:/', $tagname);
+
         $tagname = 'FRPUNCT';
         $tag = $configurator->tags->add($tagname);
         $tag->attributes->add('punct');
-        $tag->template = '&nbsp;<xsl:value-of select="@punct"/>';
-        $configurator->Preg->match('/ +(?<punct>[?!:;])/', $tagname);
+        $tag->template = '&#x202F;<xsl:value-of select="@punct"/>';
+        $configurator->Preg->match('/ +(?<punct>[?!;])/', $tagname);
     }
 }
