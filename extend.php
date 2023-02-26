@@ -30,6 +30,7 @@ return [
     (new Extend\Formatter())
         ->configure(function (Configurator $configurator) {
             $configurator->plugins->set('FrenchFancyPants', Formatter\FrenchFancyPants\Configurator::class);
+            $configurator->FrenchFancyPants->disablePass('Guillemets');
         })
         ->configure(Formatter\Configurator::class),
 ];
