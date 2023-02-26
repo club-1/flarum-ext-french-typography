@@ -1,0 +1,10 @@
+--- vendor/s9e/text-formatter/src/Plugins/FancyPants/Parser.js	2023-02-11 01:18:05.000000000 +0100
++++ src/Formatter/FrenchFancyPants/Parser.js	2023-02-26 11:03:44.037271691 +0100
+@@ -79,7 +79,7 @@
+ {
+ 	if (hasDoubleQuote)
+ 	{
+-		parseQuotePairs('"', /(?:^|\W)".+?"(?!\w)/g, "\u201c", "\u201d");
++		parseQuotePairs('"', /(?:^|\W)".+?"(?!\w)/g, "\u00ab\u00a0", "\u00a0\u00bb");
+ 	}
+ }

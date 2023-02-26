@@ -1,13 +1,16 @@
 DATE = $(shell date +%F)
 REPO_URL = https://github.com/club-1/flarum-ext-french-typography
 
-all: vendor;
+all: vendor src/Formatter/FrenchFancyPants/Parser.js;
 
-dev: vendor;
+dev: vendor src/Formatter/FrenchFancyPants/Parser.js;
 
 vendor: composer.json composer.lock
 	composer install
 	touch $@
+
+src/Formatter/FrenchFancyPants/Parser.js: vendor/s9e/text-formatter/src/Plugins/FancyPants/Parser.js patches/french-fancy-pants-parser-js.diff
+	patch $^ -o $@
 
 # Create a new release
 releasepatch: V := patch

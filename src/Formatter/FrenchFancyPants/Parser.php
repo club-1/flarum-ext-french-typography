@@ -21,15 +21,29 @@
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
-namespace Club1\FrenchTypography;
+namespace Club1\FrenchTypography\Formatter\FrenchFancyPants;
 
-use Flarum\Extend;
-use s9e\TextFormatter\Configurator;
+use s9e\TextFormatter\Plugins\FancyPants;
 
-return [
-    (new Extend\Formatter())
-        ->configure(function (Configurator $configurator) {
-            $configurator->plugins->set('FrenchFancyPants', Formatter\FrenchFancyPants\Configurator::class);
-        })
-        ->configure(Formatter\Configurator::class),
-];
+class Parser extends FancyPants\Parser
+{
+	/**
+	* Parse pairs of double quotes
+	*
+	* Does quote pairs “” -- must be done separately to handle nesting
+	*
+	* @return void
+	*/
+	protected function parseDoubleQuotePairs()
+	{
+		if ($this->hasDoubleQuote)
+		{
+			$this->parseQuotePairs(
+				'/(?<![0-9\\pL])"[^"\\n]+"(?![0-9\\pL])/uS',
+				"\xC2\xAB\xC2\xA0",
+				"\xC2\xA0\xC2\xBB"
+			);
+		}
+	}
+}
+
