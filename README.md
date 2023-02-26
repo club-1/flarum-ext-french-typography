@@ -7,6 +7,10 @@ A _very_ simple [Flarum](http://flarum.org) extension. Enhanced typography for f
 ## Features
 
 - Convert spaces before a double punctuation mark (`?`, `!`, `:`, `;`) to a non-breaking space (`&nbsp;`).
+- Enable a custom version of TextFormatter's [FancyPants plugin] with the following differences:
+  - Double quotes are replaced with « guillemets », separated from the text by non-breaking spaces.
+
+[FancyPants plugin]: https://s9etextformatter.readthedocs.io/Plugins/FancyPants/Synopsis/
 
 ## Installation
 

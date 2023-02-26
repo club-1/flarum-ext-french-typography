@@ -4,9 +4,11 @@
 
 ### Added
 
-- Convert double quotes to « guillemets », separated from the text by
+- Enable a custom version of TextFormatter's [FancyPants plugin] that
+  replaces double quotes to « guillemets », separated from the text by
   "non-breaking spaces". ([#1])
 
+[FancyPants plugin]: https://s9etextformatter.readthedocs.io/Plugins/FancyPants/Synopsis/
 [#1]: https://github.com/club-1/flarum-ext-french-typography/issues/1
 
 ### Fixed
