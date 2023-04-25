@@ -16,6 +16,16 @@
             "role": "Developer"
         }
     ],
+    "support": {
+        "forum": "https://discuss.flarum.org/d/32449",
+        "source": "https://github.com/club-1/flarum-ext-french-typography"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/n-peugnet"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Club1\\FrenchTypography\\": "src/"

@@ -32,4 +32,4 @@ php flarum cache:clear
 
 - [Packagist](https://packagist.org/packages/club-1/flarum-ext-french-typography)
 - [GitHub](https://github.com/club-1/flarum-ext-french-typography)
-- [Discuss](https://discuss.flarum.org/d/32449-french-typography)
+- [Discuss](https://discuss.flarum.org/d/32449)
