@@ -1,5 +1,6 @@
 # Project files
 /vendor
+composer.lock
 
 # Common ignored files
 .DS_Store

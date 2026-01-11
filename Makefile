@@ -5,7 +5,7 @@ all: vendor src/Formatter/FrenchFancyPants/Parser.js;
 
 dev: vendor src/Formatter/FrenchFancyPants/Parser.js;
 
-vendor: composer.json composer.lock
+vendor: composer.json
 	composer install
 	touch $@
 
